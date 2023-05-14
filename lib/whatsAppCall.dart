@@ -59,6 +59,15 @@ class CallScreen extends StatelessWidget {
             size: 30,
           )),
       appBar: AppBar(
+        toolbarHeight: 70,
+        actions: [
+          Icon(Icons.camera_alt),
+          SizedBox(width: 10),
+          Icon(Icons.search),
+          SizedBox(width: 10),
+          Icon(Icons.menu),
+          SizedBox(width: 10),
+        ],
         backgroundColor: Color.fromARGB(245, 7, 94, 84),
         title: Text(
           "WhatsApp",
