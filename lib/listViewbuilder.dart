@@ -43,16 +43,29 @@ class List_Builder extends StatelessWidget {
           title: Text("List View Builder",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
         ),
-        body: ListView.builder(
-          itemBuilder: (context, index) {
-            return Card(
-              child: ListTile(
-                // title: Text(names[index]),
-                subtitle: Text("${phone[index]}"),
+        body: Column(
+          children: [
+            SizedBox(
+              height: 300, // to limit the size of scrollable portion
+              child: ListView.builder(
+                shrinkWrap: true, // to adjust the Screen according to list
+                physics: ScrollPhysics(),
+                itemBuilder: (context, index) {
+                  return Card(
+                    child: ListTile(
+                      title: Text(names[index]),
+                      subtitle: Text("${phone[index]}"),
+                      leading: CircleAvatar(
+                        backgroundImage: AssetImage(images[index]),
+                      ),
+                    ),
+                  );
+                },
+                itemCount: names.length,
               ),
-            );
-          },
-          itemCount: names.length,
+            ),
+            ElevatedButton(onPressed: () {}, child: Text('Next'))
+          ],
         ));
   }
 }
