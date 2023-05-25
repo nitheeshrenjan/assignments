@@ -230,20 +230,25 @@ class Hotel_UI extends StatelessWidget {
 
             //DETAILS OF THE HOTEL
 
-            SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  width: 390,
-                  child: Text(
-                    '''Crowne Plaza Kochi is ideally located on the new business district of the city NH 47 Bypass and provides easy access to Info Park Kakkanad, Cochin Special Economic Zone, M.G. Road, Cochin Port, Shipyard, Naval Base, major sightseeing areas like Fort Kochi, Mattancherry and is 45 minutes away from Cochin International Airport.
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: 390,
+                height: 200,
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Text(
+                        '''Crowne Plaza Kochi is ideally located on the new business district of the city NH 47 Bypass and provides easy access to Info Park Kakkanad, Cochin Special Economic Zone, M.G. Road, Cochin Port, Shipyard, Naval Base, major sightseeing areas like Fort Kochi, Mattancherry and is 45 minutes away from Cochin International Airport.
 
 The hotel offers 269 spacious business rooms and suites with excellent views of the backwaters and the city. Our variety of authentic culinary outlets, extensive spa and leisure facilities, and high-tech meeting spaces that can accommodate large gatherings, all within a tranquil waterfront setting, makes Crowne Plaza Kochi the preferred international brand for business, leisure and events.
 
 Our Aira Spa is one of the largest hotel spas in Kerala, with a dedicated area of 25,000 sq. ft. The facilities include a beautiful reception with lobby, outdoor relaxation area with a tropical garden and water bodies, private relaxation lounge, consultation room, seven therapy suites of which three are dedicated to Ayurvedic therapies and treatments, three to western and oriental therapies and one is a couple's suite with Jacuzzi.
-                  ''',
-                    style: TextStyle(color: Colors.black87),
-                    textAlign: TextAlign.justify,
+                      ''',
+                        style: TextStyle(color: Colors.black87),
+                        textAlign: TextAlign.justify,
+                      ),
+                    ],
                   ),
                 ),
               ),
