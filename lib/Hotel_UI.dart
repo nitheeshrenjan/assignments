@@ -234,7 +234,7 @@ class Hotel_UI extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 width: 390,
-                height: 200,
+                height: 210,
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
