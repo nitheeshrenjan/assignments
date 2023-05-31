@@ -36,6 +36,7 @@ class Profile_2 extends StatelessWidget {
                         child: Row(
                           children: [
                             FloatingActionButton(
+                              backgroundColor: Colors.red,
                               onPressed: () {},
                               child: Icon(Icons.message),
                             ),
